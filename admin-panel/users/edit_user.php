@@ -46,7 +46,7 @@
     <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
         <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Gebruiker Bewerken</h2>
 
-        <form action=" method=" post" class="space-y-5">
+        <form action="" method="post" class="space-y-5">
             <!-- Email -->
             <div>
                 <label for="email" class="block text-sm font-medium text-gray-700">Emailadres</label>

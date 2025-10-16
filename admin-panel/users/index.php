@@ -1,4 +1,5 @@
-<?php include('../core/header.php'); ?>
+<?php include('../core/header.php');
+?>
 
 <?php
 $liqry = $con->prepare("SELECT admin_user_id, email FROM admin_user");

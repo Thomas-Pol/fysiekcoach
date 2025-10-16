@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include("../../admin-panel/core/functions.php");
+include("functions.php");
 /**
  * Voor de MAC gebruikers;
  */

@@ -57,7 +57,7 @@ include("db_connect.php");
         <div class="container mx-auto px-6 md:px-8 lg:px-12 py-4 max-w-7xl">
             <div class="flex justify-between items-center">
                 <a href="/Glu/jaar_3/Fysiekcoach/" class="hover-lift group">
-                    <img src="./    src/assets/fysiekcoach_test_logo.png" alt="Fysiekcoach"
+                    <img src="./src/assets/fysiekcoach_test_logo.png" alt="Fysiekcoach"
                         class="h-12 md:h-14 group-hover:brightness-110 transition-all">
                 </a>
 
