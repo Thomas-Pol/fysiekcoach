@@ -9,10 +9,11 @@ if (!$liqry) {
     if ($liqry->execute()) {
         $liqry->store_result();
         ?>
+
 <div class="min-h-screen flex items-center justify-center bg-[#efe4dd] px-4">
     <div class="w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden">
         <div class="px-6 py-4 border-b">
-            <h2 class="text-2xl font-bold text-gray-800">Gebruikersbeheer</h2>
+            <h2 class="text-2xl font-bold text-gray-800">Gebruikersbeheer </h2>
         </div>
         <div class="overflow-x-auto">
             <table class="w-full table-auto text-left text-gray-700">
@@ -26,10 +27,15 @@ if (!$liqry) {
                 <tbody class="text-sm sm:text-base">
                     <?php while ($liqry->fetch()): ?>
                     <tr class="hover:bg-gray-50 transition">
+                        <?php prettyDump($adminId) ?>
+                        <?php prettyDump($email) ?>
+
                         <td class="py-4 px-4 border-b border-gray-200"><?= htmlspecialchars($adminId); ?></td>
                         <td class="py-4 px-4 border-b border-gray-200"><?= htmlspecialchars($email); ?></td>
                         <td class="py-4 px-4 border-b border-gray-200 space-x-4">
-                            <a href="edit_user?edit=<?= $adminId; ?>" class="text-blue-600 hover:underline">Bewerk</a>
+                            <a href="edit_user.php?edit=<?= $adminId; ?>"
+                                class="text-blue-600 hover:underline">Bewerk</a>
+
                             <a href="delete_user?delete=<?= $adminId; ?>" class="text-red-600 hover:underline"
                                 onclick="return confirm('Weet u zeker dat u dit item wilt verwijderen?')">Verwijder</a>
                         </td>
